@@ -12,10 +12,7 @@ test.cb('Read buffers from spc1.bin', t => {
       return
     }
     console.log('Read spc success:', data)
-    const buffer = new Uint8Array(data)
-    buffer.forEach((value, index) => {
-      console.log(index, value)
-    })
+
     t.is(true, true)
     t.end()
   })
